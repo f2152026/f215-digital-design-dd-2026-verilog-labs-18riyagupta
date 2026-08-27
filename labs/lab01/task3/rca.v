@@ -45,6 +45,7 @@ FA_Gate FA2 (
     .cout(c3)
 );
 
+
 FA_Gate FA3 (
     .a(a[3]),
     .b(b[3]),
