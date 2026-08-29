@@ -58,14 +58,14 @@ and #(2) (t20, p1, g0);
 and #(2) (t21, p1, p0, cin);
 or  #(2) (c2, g1, t20, t21);
 
-// Carry c3 = g2 + p2.g1 + p2.p1.g0 + p2.p1.p0.cin
+// Carry c3 = g2 + p2.g1 + p2.p1.g0 + p2.p1.p0.cin 
 wire t30, t31, t32;
 and #(2) (t30, p2, g1);
 and #(2) (t31, p2, p1, g0);
 and #(2) (t32, p2, p1, p0, cin);
 or  #(2) (c3, g2, t30, t31, t32);
 
-// Carry c4 = g3 + p3.g2 + p3.p2.g1 + p3.p2.p1.g0 + p3.p2.p1.p0.cin
+// Carry c4 = g3 + p3.g2 + p3.p2.g1 + p3.p2.p1.g0 + p3.p2.p1.p0.cin and cout
 wire t40, t41, t42, t43;
 and #(2) (t40, p3, g2);
 and #(2) (t41, p3, p2, g1);
